@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin-top: 2px;
+      }
+      body {
+        background-color: #e1e1e1;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        align-items: center;
+        margin: 2%;
+      }
+      .form {
+        width: 45vw;
+        background-color: #fff;
+        padding: 1%;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      #box {
+        width: 100%;
+        height: 3vh;
+      }
+      .form form,
+      .form button {
+        margin: 10px 0 10px 0;
+      }
+
+      button {
+        font-size: 18px;
+        font-weight: 550;
+        margin: 20px 0 10px 0;
+        height: 5vh;
+        width: 100%;
+        border-radius: 6px;
+        background-color: #05c46b;
+      }
+      button:hover {
+        background-color: #0a7c47;
+      }
+
+      input,
+      label {
+        margin-top: 6px;
+      }
+
+      #suggestionbox {
+        width: 100%;
+      }
+    </style>
+    <div class="title">
+      <h1 style="color: #05c46b">Herald College Kathmandu Survey Form</h1>
+    </div>
+    <div class="form">
+      <form>
+        <label for="name">Name</label><br />
+        <input type="text" placeholder="Enter your name" id="box" /><br /><br />
+
+        <label for="email">Email</label><br />
+        <input
+          type="text"
+          placeholder="Enter your email"
+          id="box"
+        /><br /><br />
+
+        <label for="age">Age</label><br />
+        <input type="text" placeholder="Enter your age" id="box" /><br /><br />
+
+        <label for="select">Which option best describe you?</label><br />
+        <select name="select" id="box">
+          <option>Student</option>
+          <option>Teacher</option>
+        </select>
+        <br /><br />
+
+        <label for="recommendation">
+          Would you recommend Herald College Kathmandu to a friend? </label
+        ><br />
+        <input type="radio" id="tick" name="recommend" value="Yes" />
+        <label for="html">Yes</label><br />
+        <input type="radio" id="tick" name="recommend" value="No" />
+        <label for="html">No</label><br />
+        <input type="radio" id="tick" name="recommend" value="Maybe" />
+        <label for="html">Maybe</label>
+        <br /><br />
+
+        <label for="recommendation">
+          Languages and Frameworks known <br />(check all that apply)</label
+        ><br />
+        <input type="checkbox" id="tickbox" name="languages" value="C" />
+        <label for="html">C</label><br />
+        <input type="checkbox" id="tickbox" name="languages" value="C++" />
+        <label for="html">C++</label><br />
+        <input type="checkbox" id="tickbox" name="languages" value="C#" />
+        <label for="html">C#</label><br />
+        <input type="checkbox" id="tickbox" name="languages" value="Java" />
+        <label for="html">Java</label><br />
+        <input type="checkbox" id="tickbox" name="languages" value="Python" />
+        <label for="html">Python</label><br />
+        <input
+          type="checkbox"
+          id="tickbox"
+          name="languages"
+          value="Javascript"
+        />
+        <label for="html">JavaScript</label><br />
+        <input type="checkbox" id="tickbox" name="languages" value="React" />
+        <label for="html">React</label><br />
+        <input type="checkbox" id="tickbox" name="languages" value="Angular" />
+        <label for="html">Angualr</label><br />
+        <input type="checkbox" id="tickbox" name="languages" value="Django" />
+        <label for="html">Django</label><br />
+        <input type="checkbox" id="tickbox" name="languages" value="Spring" />
+        <label for="html">Spring</label>
+        <br /><br />
+
+        <label for="html">Any comments or suggestions</label><br />
+        <textarea id="suggestionbox" rows="5vh" cols="54"></textarea>
+      </form>
+      <button>Submit</button>
+    </div>
+  </body>
+</html>
